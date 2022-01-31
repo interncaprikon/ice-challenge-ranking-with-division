@@ -40,7 +40,7 @@ const useStyles = makeStyles({
     right: 0,
   },
   tContain:{
-    maxHeight:500,
+    maxHeight:400,
     overflowY:'scroll',
     position:'relative',
   },
@@ -190,7 +190,7 @@ export default function RankingList({
     />
   </Head>
   <ThemeProvider theme={theme}>
-  <Container className={classes.fixed} maxWidth="md">
+  <Container maxWidth="md">
   
          <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
       Leaderboard
