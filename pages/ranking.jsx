@@ -166,11 +166,15 @@ export default function RankingList({
   const timeNow = new Date();
   const divisionNames=["Overall","HKI (Secondary)","HKI (Primary)","KLN (Secondary)","KLN (Primary)","NT (Secondary)","NT (Primary)","Macau (Secondary)","Macau (Primary)"];
   var notEmpty=[];
-  for (var divisionIndex=0;divisionIndex<districtRankings.length-1;divisionIndex++){
+  for (var divisionIndex=0;divisionIndex<districtRankings.length-2;divisionIndex++){
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
   }
-  if ( MOstart.getTime() - timeNow.getTime()<=0){notEmpty.push(districtRankings.length-1)};
+  if ( MOstart.getTime() - timeNow.getTime()<=0){
+    for (var divisionIndex=districtRankings.length-2;divisionIndex<districtRankings.length;divisionIndex++){
+      if (districtRankings[divisionIndex].length){
+      notEmpty.push(divisionIndex)}
+    }};
   return ((notEmpty.length&&partyTime)?( <>
     <Head>
     <title>ICE Challenge - Ranking</title>
