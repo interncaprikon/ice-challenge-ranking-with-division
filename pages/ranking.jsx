@@ -19,7 +19,7 @@ var colors=['clicked','secondary','secondary','secondary','secondary','secondary
 
 const useStyles = makeStyles({
   table: {
-    maxHeight:500,
+    maxHeight:400,
     minWidth:300,
     overflowY:'scroll',
   },
