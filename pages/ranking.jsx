@@ -164,7 +164,7 @@ export default function RankingList({
   const districtRankings=[oRankings,hsRankings,hpRankings,ksRankings,kpRankings,nsRankings,npRankings,msRankings,mpRankings]
   const MOstart = new Date("03/01/2022 14:00:00");
   const timeNow = new Date();
-  const divisionNames=["Overall","Hong Kong Island","Kowloon","New Territories","Macau"];
+  const divisionNames=["Overall","HKI (Secondary)","HKI (Primary)","KLN (Secondary)","KLN (Primary)","NT (Secondary)","NT (Primary)","Macau (Secondary)","Macau (Primary)"];
   var notEmpty=[];
   for (var divisionIndex=0;divisionIndex<districtRankings.length-1;divisionIndex++){
     if (districtRankings[divisionIndex].length){
