@@ -15,7 +15,7 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import { createTheme, ThemeProvider } from '@material-ui/core';
-var colors=['clicked','secondary','secondary','secondary','secondary']
+var colors=['clicked','secondary','secondary','secondary','secondary','secondary','secondary','secondary','secondary']
 
 const useStyles = makeStyles({
   table: {
